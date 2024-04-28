@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { MyWorkComponent } from '../my-work/my-work.component';
 

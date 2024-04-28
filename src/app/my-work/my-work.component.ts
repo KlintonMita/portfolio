@@ -21,10 +21,10 @@ export class MyWorkComponent {
     message: ''
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'klintonmita.de/sendMail.php',
+    endPoint: 'sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
