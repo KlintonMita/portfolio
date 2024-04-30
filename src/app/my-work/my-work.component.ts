@@ -18,7 +18,8 @@ export class MyWorkComponent {
   formData = {
     name: '',
     email: '',
-    message: ''
+    message: '',
+    terms: false
   };
 
   mailTest = false;

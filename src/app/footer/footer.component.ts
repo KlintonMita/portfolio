@@ -9,15 +9,4 @@ import { RouterModule } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  openImpressum() {
-    const impressumSpan = document.getElementById('impressumSpan');
-    const spanid = document.getElementById('spanID2');
-    if (impressumSpan ) {
-      impressumSpan.style.width = "100%";
-    }
-    if (spanid ) {
-      spanid.style.display = "none";
-    }
-  }
-
 }

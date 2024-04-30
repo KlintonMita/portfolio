@@ -1,11 +1,12 @@
 import { Component, ElementRef } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { MyWorkComponent } from '../my-work/my-work.component';
+import { ImpressumComponent } from '../impressum/impressum.component';
 
 @Component({
   selector: 'app-start-screen',
   standalone: true,
-  imports: [MyWorkComponent, FooterComponent],
+  imports: [MyWorkComponent, FooterComponent, ImpressumComponent],
   templateUrl: './start-screen.component.html',
   styleUrl: './start-screen.component.scss'
 })

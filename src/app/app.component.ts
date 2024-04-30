@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
@@ -9,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [],
   imports: [],
   exports: [],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
 })
 
 export class FeatureModule {}

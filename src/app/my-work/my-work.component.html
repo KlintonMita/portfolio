@@ -107,14 +107,19 @@
               <div class="form1">
                 <input type="text" id="name" placeholder="Your Name" name="name" [(ngModel)]="formData.name" required>
               </div>
-              <div  class="form1">
+              <div class="form1">
                 <input type="email" id="email" placeholder="Your Email Address" name="email" [(ngModel)]="formData.email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
               </div>
-              <div  class="form1">
+              <div class="form1">
                 <textarea id="message" name="message" placeholder="Your Message" [(ngModel)]="formData.message" required></textarea>
+              </div>
+              <div class="form1">
+                <input type="checkbox" id="terms" name="terms" [(ngModel)]="formData.terms" required>
+                <label for="terms">I accept the terms and conditions</label>
               </div>
               <button type="submit" [disabled]="!form.valid">Submit</button>
             </form>
+            
           </div>
       </div>
   </div>
