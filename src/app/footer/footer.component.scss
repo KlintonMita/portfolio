@@ -1,9 +1,9 @@
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #5988ff;
-    height: 400px;
+    height: 250px;
     display: flex;
 }
 
@@ -31,9 +31,13 @@
 
     a{
         text-decoration: none;
-        color: black;
+        color: white;
         font-size: 20px;
         font-family: Montserrat;
+    }
+
+    h2 {
+        color: white;
     }
 }
 
@@ -44,16 +48,22 @@
     justify-content: center;
 }
 
-@media (max-width: 1180px) {
-    .footer {
-        top: 100px;
-    }
-}
-
 .upTag {
     margin-top: 50px;
     margin-left: 50px;
     display: block;
+    position: relative;
+    bottom: 20px;
+}
+
+@media (max-width: 1180px) {
+    .footer {
+        top: 100px;
+    }
+
+    .upTag {
+        position: static;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -62,7 +72,7 @@
     }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 600px) {
     .footer-2 {
         flex-direction: column;
     }

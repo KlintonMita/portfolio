@@ -1,127 +1,222 @@
-<div class="work-together" id="work-tog">
+<div class="main-container">
+  <div class="work-together" id="work-tog">
     <div class="two-parts">
       <div class="lets-work">
-        <h1>Let's work together</h1>
+        <h1 id="letsWorkId">{{letsWork}} <br> {{together}}</h1>
       </div>
       <div class="explanation">
         <img src="assets/e6.png" />
-        <h2>
-          I am a Front-end developer based in Osnabrück, Germany. I enjoy helping
-          designers and companies bring their ideas into real life. I am looking
-          forward to continuing my developer career with a job in a junior web
-          developer position. <br />
+        <h2>{{textWork}} <br />
           <br />
-          If you think I’d be a good match for your projects, contact me!
+          {{goodMatch}}
         </h2>
-        <a href="#cont">Send a message</a>
+        <a href="#cont">{{sendMessage}}</a>
       </div>
     </div>
   </div>
   <div class="skills" id="skillstag2">
     <div class="skill-2">
-      <h1 id="skillstag">Skill Set</h1>
+      <h1 id="skillstag">{{skillSet}}</h1>
       <div class="skill-img">
         <div class="si2">
-          <img src="assets/icons/ang.png" />
-          <img src="assets/icons/htm.png" />
-          <img src="assets/icons/css.png" />
-          <img src="assets/icons/ts.png" />
+          <div class="siClass"><img src="assets/icons/angular.png" /><h2>Angular</h2></div>
+          <div class="siClass"><img src="assets/icons/html.png" /><h2>Html</h2></div>
+          <div class="siClass"><img src="assets/icons/css.png" /><h2>Css</h2></div>
+          <div class="siClass"><img src="assets/icons/type.png" /><h2>TypeScript</h2></div>
         </div>
         <div class="si2">
-          <img src="assets/icons/js.png" />
-          <img src="assets/icons/ic.png" />
-          <img src="assets/icons/api.png" />
-          <img src="assets/icons/f9.png" />
+          <div class="siClass"><img src="assets/icons/java.png" /><h2>Java</h2></div>
+          <div class="siClass"><img src="assets/icons/firebase.png" /><h2>Firebase</h2></div>
+          <div class="siClass"><img src="assets/icons/rest.png" /><h2>Rest-Api</h2></div>
+          <div class="siClass"><img src="assets/icons/git.png" /><h2>Git</h2></div>
         </div>
         <div class="si3">
-          <img src="assets/icons/ang.png" />
-          <img src="assets/icons/htm.png" />
+          <div class="siClass"><img src="assets/icons/angular.png" /><h2>Angular</h2></div>
+          <div class="siClass"><img src="assets/icons/html.png" /><h2>Html</h2></div>
         </div>
         <div class="si4">
-          <img src="assets/icons/css.png" />
-          <img src="assets/icons/ts.png" /> 
+          <div class="siClass"><img src="assets/icons/css.png" /><h2>Css</h2></div>
+          <div class="siClass"><img src="assets/icons/type.png" /><h2>TypeScript</h2></div>
         </div>
         <div class="si5">
-          <img src="assets/icons/js.png" />
-          <img src="assets/icons/ic.png" />
+          <div class="siClass"><img src="assets/icons/java.png" /><h2>Java</h2></div>
+          <div class="siClass"><img src="assets/icons/firebase.png" /><h2>Firebase</h2></div>
         </div>
         <div class="si6">
-          <img src="assets/icons/api.png" />
-          <img src="assets/icons/f9.png" />
+          <div class="siClass"><img src="assets/icons/rest.png" /><h2>Rest-Api</h2></div>
+          <div class="siClass"><img src="assets/icons/git.png" /><h2>Git</h2></div>
         </div>
       </div>
     </div>
   </div>
   <div class="my-work work-fixed" id="myworktag2">
-      <div class="my-work-ex">
-          <h1 id="myworktag">My work</h1>
-          <h2>Explore a selection of my work here - Interact with <br> projects to see my skills in action.</h2>
+    <div class="my-work-ex">
+      <h1 id="myworktag">{{myWork}}</h1>
+      <h2>
+        {{explore}} <br />
+        {{projects}}
+      </h2>
+    </div>
+    <div class="projects">
+      <div data-aos="fade-up" class="first-project">
+        <img src="assets/startscreen_1.png" />
+        <div class="project-explaining">
+          <h2>Pollo Loco</h2>
+          <h3>JavaScript | HTML | CSS</h3>
+          <h4 id="proDescription">
+            {{project1}}
+          </h4>
+          <div class="btn-project1">
+            <a href="https://github.com/KlintonMita/polloloco" target="blank"
+            >Github</a
+          >
+          <a class="livetest" href="http://game-mita.de" target="_blank"
+            >Test</a
+          >
+          </div>
+        </div>
       </div>
-      <div class="projects">
-          <div class="first-project">
-              <img src="assets/startscreen_1.png">
-              <div class="project-explaining">
-                  <h2>Pollo Loco</h2>
-                  <h3>JavaScript | HTML | CSS</h3>
-                  <h4>Jump, run and throw game based on object-oriented approach. 
-                      Help Pepe to find coins and tabasco salsa to fight against the crazy hen.</h4>
-                  <a href="https://github.com/KlintonMita/polloloco" target="blank">Github</a>
-                  <a class="livetest" href="http://game-mita.de" target="_blank">Live Test</a>
-              </div>
+      <div data-aos="fade-up" class="second-project">
+        <div class="project-explaining2">
+          <h2>Lieferando</h2>
+          <h3>JavaScript | HTML | CSS</h3>
+          <h4>{{project2}}</h4>
+          <div class="btn-project2">
+            <a href="https://github.com/KlintonMita/liferando" target="blank"
+            >Github</a
+          >
+          <a class="livetest" href="http://liferando-mita.de" target="blank"
+            >Test</a
+          >
           </div>
-          <div class="second-project">
-              <div class="project-explaining2">
-                  <h2>Lieferando</h2>
-                  <h3>JavaScript | HTML | CSS</h3>
-                  <h4>A simple order restaurant based on Lieferando.</h4>
-                  <a href="https://github.com/KlintonMita/liferando" target="blank" >Github</a>
-                  <a class="livetest" href="http://liferando-mita.de" target="blank">Live Test</a>
-              </div>
-              <img src="assets/liferando.JPG">
-          </div>
-          <div class="third-project">
-              <img src="assets/liferando.JPG">
-              <div class="project-explaining3">
-                  <h2>Simple CRM</h2>
-                  <h3>Angular | Firebase</h3>
-                  <h4>A very Simple Customer Relationship Management system working with CRUD functionality. </h4>
-                  <a href="#" target="blank">Github</a>
-                  <a class="livetest" href="https://github.com/KlintonMita/polloloco" target="blank">Live Test</a>
-              </div>
-          </div>
+        </div>
+        <img src="assets/liferando.JPG" />
       </div>
+      <div data-aos="fade-up" class="third-project">
+        <img src="assets/liferando.JPG" />
+        <div class="project-explaining3">
+          <h2>Simple CRM</h2>
+          <h3>Angular | Firebase</h3>
+          <h4>
+            {{project3}}
+          </h4>
+          <div class="btn-project3">
+            <a href="#" target="blank">Github</a>
+            <a
+              class="livetest"
+              href="https://github.com/KlintonMita/polloloco"
+              target="blank"
+              >Test</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="contact" id="cont">
-      <div class="contact-form">
-          <div class="contact-text">
-              <h1>Contact</h1>
-              <h2>Got a problem to solve?</h2>
-              <h3>Contact me through this form, I am interested 
-                  in hearing from you, knowing your ideas and contributing to 
-                  your projects with my work.</h3>
-              <h4>Need a Frontend developer? Contact me!</h4>
-              <img src="assets/e5.png">
-          </div>
-          <div class="input-form">
-            <form (ngSubmit)="onSubmit(form)" #form="ngForm">
-              <div class="form1">
-                <input type="text" id="name" placeholder="Your Name" name="name" [(ngModel)]="formData.name" required>
-              </div>
-              <div class="form1">
-                <input type="email" id="email" placeholder="Your Email Address" name="email" [(ngModel)]="formData.email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-              </div>
-              <div class="form1">
-                <textarea id="message" name="message" placeholder="Your Message" [(ngModel)]="formData.message" required></textarea>
-              </div>
-              <div class="form1">
-                <input type="checkbox" id="terms" name="terms" [(ngModel)]="formData.terms" required>
-                <label for="terms">I accept the terms and conditions</label>
-              </div>
-              <button type="submit" [disabled]="!form.valid">Submit</button>
-            </form>
-            
-          </div>
+    <div class="contact-form" id="contactGer">
+      <div class="contact-text">
+        <h1 id="headerContactGer">{{contact}}</h1>
+        <h2 id="headerContactGer2">{{problemSolve}}</h2>
+        <h3 id="contactGer2">
+          {{contactMe}}
+        </h3>
+        <h4 id="headerContactGer3">{{needDeveloper}} <span> {{callMe}} </span></h4>
+        <img src="assets/e5.png" />
       </div>
+      <div class="input-form" id="cont2">
+        <form (ngSubmit)="onSubmit(form)" #form="ngForm" novalidate>
+          <div class="form1 form2">
+            <input
+              style="font-family: Montserrat"
+              type="text"
+              id="name"
+              placeholder={{nameP}}
+              name="name"
+              [(ngModel)]="formData.name"
+              #name="ngModel"
+              required
+            />
+            <div
+              *ngIf="name.invalid && (name.dirty || name.touched)"
+              class="alert"
+            >
+              <div *ngIf="name.errors?.['required']">{{fillName}}</div>
+            </div>
+          </div>
+          <div class="form1 form2">
+            <input
+              style="font-family: Montserrat"
+              type="email"
+              id="email"
+              placeholder={{emailA}}
+              name="email"
+              [(ngModel)]="formData.email"
+              #email="ngModel"
+              required
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+            />
+            <div
+              *ngIf="email.invalid && (email.dirty || email.touched)"
+              class="alert"
+            >
+              <div *ngIf="email.errors?.['required']">{{fillEmail}}</div>
+              <div *ngIf="email.errors?.['pattern']">
+                {{validEmail}}
+              </div>
+            </div>
+          </div>
+          <div class="form1 form2">
+            <textarea
+              style="font-family: Montserrat"
+              id="message"
+              name="message"
+              placeholder={{yourMessage}}
+              [(ngModel)]="formData.message"
+              #message="ngModel"
+              required
+            ></textarea>
+            <div
+              *ngIf="message.invalid && (message.dirty || message.touched)"
+              class="alert"
+            >
+              <div *ngIf="message.errors?.['required']">
+                {{enterM}}
+              </div>
+            </div>
+          </div>
+          <div class="form1 form3">
+            <div>
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              [(ngModel)]="formData.terms"
+              #terms="ngModel"
+              required
+            />
+            <label for="terms">{{termsC}}</label></div>
+            <div
+              *ngIf="terms.invalid && (terms.dirty || terms.touched)"
+              class="alert"
+            >
+              <div *ngIf="terms.errors?.['required']">
+                {{acceptT}}
+              </div>
+            </div>
+          </div>
+          <div *ngIf="emailSentSuccessfully" class="alert">
+            {{emailSent}}
+          </div>
+          <button
+            type="submit"
+            [disabled]="!form.valid"
+            [class.valid]="form.valid"
+          >
+            {{submitT}}
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
-  
-  
+</div>
